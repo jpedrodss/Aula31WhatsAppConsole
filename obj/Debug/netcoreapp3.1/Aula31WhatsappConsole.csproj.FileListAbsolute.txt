@@ -1,0 +1,13 @@
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\bin\Debug\netcoreapp3.1\Aula31WhatsappConsole.exe
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\bin\Debug\netcoreapp3.1\Aula31WhatsappConsole.deps.json
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\bin\Debug\netcoreapp3.1\Aula31WhatsappConsole.runtimeconfig.json
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\bin\Debug\netcoreapp3.1\Aula31WhatsappConsole.runtimeconfig.dev.json
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\bin\Debug\netcoreapp3.1\Aula31WhatsappConsole.dll
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\bin\Debug\netcoreapp3.1\Aula31WhatsappConsole.pdb
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\obj\Debug\netcoreapp3.1\Aula31WhatsappConsole.csprojAssemblyReference.cache
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\obj\Debug\netcoreapp3.1\Aula31WhatsappConsole.csproj.CoreCompileInputs.cache
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\obj\Debug\netcoreapp3.1\Aula31WhatsappConsole.AssemblyInfoInputs.cache
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\obj\Debug\netcoreapp3.1\Aula31WhatsappConsole.AssemblyInfo.cs
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\obj\Debug\netcoreapp3.1\Aula31WhatsappConsole.dll
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\obj\Debug\netcoreapp3.1\Aula31WhatsappConsole.pdb
+C:\Users\kermt\Documents\Projetos\Aula31WhatsappConsole\obj\Debug\netcoreapp3.1\Aula31WhatsappConsole.genruntimeconfig.cache
