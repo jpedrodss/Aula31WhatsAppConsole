@@ -50,14 +50,10 @@ namespace Aula31WhatsappConsole
             ReescreverCSV(linhas);
         }
 
-        public List<Contato> Listar(){
-            List<Contato> contatos = new List<Contato>();
+        public void Listar(){
+            
+            // Não consegui achar uma maneira que esse método funcionasse.
 
-            string[] linhas = File.ReadAllLines(PATH);
-
-            contatos = contatos.OrderBy(z => z.Nome).ToList();
-
-            return contatos;
         }
 
         private string PrepararLinha(Contato c){
