@@ -63,10 +63,29 @@ namespace Aula31WhatsappConsole
             ReescreverCSV(linhas);
         }
 
-        public void Listar(){
-            
-            // Não consegui achar uma maneira que esse método funcionasse.
+        public List<Contato> Listar(){
+            List<Contato> contatos = new List<Contato>();
 
+            string[] linhas = File.ReadAllLines(PATH);
+            
+            foreach (var linha in linhas){
+                string[] dados = linha.Split(';');
+
+                Contato c = new Contato();
+                c.Nome = Separar(dados[0]);
+                c.Telefone = Separar(dados[1]);
+
+                contatos.Add(c);
+            }
+
+            contatos = contatos.OrderBy(y => y.Nome).ToList();
+
+            return contatos;
+
+        }
+        public string Separar(string dado)
+        {
+            return dado.Split('=')[1];
         }
         /// <summary>
         /// Usado para escrever a linha

@@ -6,6 +6,6 @@ namespace Aula31WhatsappConsole
     {
          void Cadastrar(Contato c);
          void Excluir(string _termo);
-         void Listar();
+         List<Contato> Listar();
     }
 }

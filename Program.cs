@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Aula31WhatsappConsole
 {
@@ -7,16 +8,21 @@ namespace Aula31WhatsappConsole
         static void Main(string[] args)
         {
             Agenda agenda = new Agenda();
-            Contato c1    = new Contato("João", "+55 11 9 9839-3266");
-            Contato c2    = new Contato("Pedro", "+55 11 9 9649-6876");
-            Contato c3    = new Contato("Elon Musk", "+55 11 9 4548-2317");
+            Contato c1    = new Contato();
+            c1.Nome = "João";
+            c1.Telefone = "+55 11 9 9839-3266";
             Mensagem msg  = new Mensagem();
 
-            agenda.Cadastrar(c3);
+            agenda.Cadastrar(c1);
 
-            agenda.Excluir("Pedro");
+            // agenda.Excluir("Pedro");
 
-            msg.Enviar(c3);
+            List<Contato> lista = agenda.Listar();
+
+            foreach (Contato item in lista){
+                System.Console.WriteLine($"Nome: {item.Nome} - Telefone: {item.Telefone}");
+            }
+
         }
     }
 }
