@@ -6,7 +6,10 @@ namespace Aula31WhatsappConsole
     {
         public string Texto { get; set; }
         public Contato Destinatario;
-
+        /// <summary>
+        /// Envia mensagem para um contato
+        /// </summary>
+        /// <param name="c">contato</param>
         public void Enviar(Contato c){
             Console.WriteLine($"Qual mensagem deseja enviar para {c.Nome}?");
             Texto = Console.ReadLine();

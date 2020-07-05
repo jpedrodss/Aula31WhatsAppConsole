@@ -15,7 +15,10 @@ namespace Aula31WhatsappConsole
                 File.Create(PATH).Close();
             }
         }
-
+        /// <summary>
+        /// Apaga linhas no CSV
+        /// </summary>
+        /// <param name="linhas">linha do csv</param>
         public void ReescreverCSV(List<string> linhas){
             using (StreamWriter output = new StreamWriter(PATH)){
                 foreach (string ln in linhas){
@@ -23,6 +26,11 @@ namespace Aula31WhatsappConsole
                 }
             }
         }
+        /// <summary>
+        /// Lê as linhas do CSV para remover
+        /// </summary>
+        /// <param name="linhas">linha do csv</param>
+        /// <param name="_termo">termo será utilizado para apagar um contato da lista (Nome ou Telefone)</param>
         public void RemoverLinhas(List<string> linhas, string _termo){
             using (StreamReader arquivo = new StreamReader(PATH)){
                 string linha;
@@ -33,15 +41,20 @@ namespace Aula31WhatsappConsole
                 linhas.RemoveAll(z => z.Contains(_termo));
             }
         }
-        public string Separar(string dado)
-        {
-            return dado.Split('=')[1];
-        }
+
+        /// <summary>
+        /// Cadastra um número na lista de contatos
+        /// </summary>
+        /// <param name="c">contato</param>
         public void Cadastrar(Contato c){
             var linha = new string[] { PrepararLinha(c) };
             File.AppendAllLines(PATH, linha);
         }
 
+        /// <summary>
+        /// Exclue um contato da lista csv
+        /// </summary>
+        /// <param name="_termo">termo será utilizado para apagar um contato da lista (Nome ou Telefone)</param>
         public void Excluir(string _termo){
             List<string> linhas = new List<string>();
 
@@ -55,7 +68,11 @@ namespace Aula31WhatsappConsole
             // Não consegui achar uma maneira que esse método funcionasse.
 
         }
-
+        /// <summary>
+        /// Usado para escrever a linha
+        /// </summary>
+        /// <param name="c">contato</param>
+        /// <returns>Linha no CSV com as informações</returns>
         private string PrepararLinha(Contato c){
             return $"Nome={c.Nome};Telefone={c.Telefone}";
         }
